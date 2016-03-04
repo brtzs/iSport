@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung_main"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="260px"
+        android:layout_height="260px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/register_success_icon"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:text="@string/register_success"
+        android:textSize="40px"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingTop="70px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <ImageButton
+            android:layout_width="250px"
+            android:layout_height="320px"
+            android:id="@+id/BackHomepage"
+            android:layout_weight="1"
+            android:src="@drawable/backhomepage" />
+
+        <ImageButton
+            android:layout_width="250px"
+            android:layout_height="320px"
+            android:id="@+id/ImprovePersonalInformation"
+            android:layout_weight="1"
+            android:src="@drawable/improvepersonalinformation"/>
+
+    </LinearLayout>
+
+</LinearLayout>

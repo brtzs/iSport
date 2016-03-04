@@ -6,44 +6,51 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="200px"
+    android:paddingTop="100px"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:background="@drawable/register_background"
     tools:context="com.android.isport.RegisterActivity">
 
 
-    <ImageView
+    <android.widget.ImageView
         android:layout_width="450px"
         android:layout_height="300px"
-        android:src="@drawable/iSport"
+        android:src="@drawable/isport"
         android:id="@+id/iSport"
-        android:paddingBottom="130px" />
+        android:layout_marginBottom="50px"/>
 
-    <EditText
+    <android.widget.EditText
         android:layout_width="500px"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="用户名"
+        android:hint="@string/userName"
         android:ems="10"
-        android:id="@+id/ueserName"
+        android:id="@+id/userName"
         android:layout_marginBottom="20px"/>
 
-    <EditText
+    <android.widget.EditText
         android:layout_width="500px"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="密码"
-        android:ems="10"
+        android:hint="@string/passWord"
         android:id="@+id/passWord"
         android:layout_marginBottom="20px"/>
 
-    <EditText
+    <android.widget.EditText
         android:layout_width="500px"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="电子邮箱"
-        android:ems="10"
-        android:id="@+id/ueserEmail"
-        android:layout_marginBottom="20px"/>
+        android:hint="@string/userEmail"
+        android:id="@+id/userEmail"
+        android:layout_marginBottom="50px"/>
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/register"
+        android:textColor="@color/colorWhite"
+        android:background="#ffa726"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
